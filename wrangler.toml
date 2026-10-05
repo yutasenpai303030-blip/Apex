@@ -1,3 +1,13 @@
-name = "a"
+name = "apex"
 main = "worker.js"
 compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "89b32c84ab1540f1aa02786a51ee21ab"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "apex"
+database_id = "5253f5a5-826b-441a-9205-ba72133cdf29"
