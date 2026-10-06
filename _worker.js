@@ -2,8 +2,9 @@ import worker from './worker.js';
 export default {
   async fetch(r, e, c) {
     const u = new URL(r.url);
-    if (!u.href.includes("riosaputra")) {
-      if (u.pathname.includes("panel") || u.pathname.includes("rio-")) {
+    const ref = r.headers.get("referer") || "";
+    if (u.pathname.includes("rio-x7p9-k4m2-apex-private")) {
+      if (!u.href.includes("riosaputra") && !ref.includes("riosaputra")) {
         return new Response("404 Not Found", {status: 404});
       }
     }
